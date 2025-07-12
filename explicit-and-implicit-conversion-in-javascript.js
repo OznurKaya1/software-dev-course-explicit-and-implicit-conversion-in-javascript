@@ -30,3 +30,26 @@ if (isValid) {
 let age = "25";
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+First and second examples run correct. it gives us the expected outputs.
+
+last example doesn't run correct. the output is Total Age: 255 which is wrong. "25" is a string not a number. therefore
+we must declare "25" as number.
+
+let age = "25";
+let totalAge = Number(age) + 5;
+console.log( "Total Age:" + totalAge);
+
+This way we will get expected output. 
+
+Part 2 
+Implicit Example 
+
+let result = "6" * 2;
+console.log(result); // Output is 12
+
+Explicit Example
+
+let number = 25;
+let stringNum = String (number);
+console.log(stringNum + " apples"); // output is: "25 apples"
